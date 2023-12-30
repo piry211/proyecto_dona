@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('tile1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.banner {
+    padding: 20% 5%;
+    color: black;
+    font-size: 30px;
+}
+
+header {
+    display: flex;
+    min-height: 70px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+    color: #000;
+}
+
+nav a:hover {
+    color: grey;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 9px;
+    }
+}
+
+* {
+    margin: 0;
+}
+
+.productos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.producto {
+    text-align: center;
+    width: 200px;
+    margin-bottom: 20px;
+    border: 2px solid #ffc107;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.producto img {
+    width: 100%; 
+    height: 150px;
+    object-fit: cover; 
+    border-radius: 10px;
+
+}
+
+.producto-info {
+    margin-top: 10px;
+}
+
+footer {
+    background-color: black;
+    padding: 10px 0;
+    text-align: center;
+    color: black;
+}
